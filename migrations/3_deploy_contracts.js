@@ -1,8 +1,8 @@
 // const bsctoken= artifacts.require("TokenBsc");
-const bridgeEth = artifacts.require("BridgeEth");
+const tokenBsc = artifacts.require("TokenBsc");
 
 module.exports = async function (deployer) {
-  deployer.deploy(bridgeEth);
+  deployer.deploy(tokenBsc);
 
 };
 // const Migrations = artifacts.require("Migrations");

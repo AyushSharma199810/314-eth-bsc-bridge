@@ -47,7 +47,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "//SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.0;\n\ninterface IToken {\n  function mint(address to, uint amount) external;\n  function burn(address owner, uint amount) external;\n}\n",
-  "sourcePath": "/home/ayush/314-eth-bsc-bridge/contracts/IToken.sol",
+  "sourcePath": "/home/ayushsharma/Desktop/314-eth-bsc-bridge/contracts/IToken.sol",
   "ast": {
     "absolutePath": "project:/contracts/IToken.sol",
     "exportedSymbols": {
@@ -256,7 +256,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-06-23T19:14:41.093Z",
+  "updatedAt": "2022-06-24T06:53:43.820Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
