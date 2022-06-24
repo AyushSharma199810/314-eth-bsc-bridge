@@ -7,4 +7,6 @@ router.post("/mint",control.mint);
 router.get("/balancebsc",control.BalanceBsc);
 router.get("/balanceEth",control.BalanceEth);
 router.post("/mintbsc",control.mintbsc);
+router.get("/events",control.events)
+router.post("/burn",control.burn);
 module.exports = {router};
