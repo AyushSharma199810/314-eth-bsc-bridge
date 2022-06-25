@@ -21,7 +21,7 @@ const mint =  async (req,res) => {
     const recieve = await MoneyContract.methods.receiveMoney();
     const contractAddress1 = SendMoney.networks[4].address;
 const value1 = req.body.value;
-  // const privatekey = "fc92fef1130ce4e041b39bfaea9053e66cfa4f34462ebfd49ed9a6863032b8ac";
+  //
 
   const recieveABI = recieve.encodeABI();
 
@@ -48,7 +48,7 @@ const value1 = req.body.value;
     const add = "0x0a1b05De4569F7728244728259E43BDF277461b7";
     const contractAddress = ethtoken.networks[4].address;
   
-  const privatekey = "fc92fef1130ce4e041b39bfaea9053e66cfa4f34462ebfd49ed9a6863032b8ac";
+
   const burn1 = await ethContract.methods.mint(add, result * 10);
   const burnABI = burn1.encodeABI();
 
@@ -161,7 +161,7 @@ const BalanceBsc = async(req,res) => {
     const mint1 = await bscContract.methods.mint(add,10);
     const mintABI = mint1.encodeABI();
     const ContractAddressBsc = bsctoken.networks[97].address;
-    const privatekey = "fc92fef1130ce4e041b39bfaea9053e66cfa4f34462ebfd49ed9a6863032b8ac";
+    
   
     const gasPrice = await web3bsc.eth.getGasPrice();
     const nonce = await web3bsc.eth.getTransactionCount(add,"pending");
@@ -190,7 +190,7 @@ const burn = async(req,res)=> {
   const burn1 = await ethBridge.methods.burn("0x0a1b05De4569F7728244728259E43BDF277461b7", 10);
   const burnABI = burn1.encodeABI();
   const contractAddress = ethbridge.networks[4].address;
-  const privatekey = "fc92fef1130ce4e041b39bfaea9053e66cfa4f34462ebfd49ed9a6863032b8ac";
+
   const gasPrice = await web3eth.eth.getGasPrice();
   const nonce1 = await web3eth.eth.getTransactionCount(add,"pending");
   NetworkID = 4;
